@@ -4,7 +4,7 @@ describe('Scenarios where authentication is a pre-requirement', () => {
     cy.login()
   })
 
-  it('CRUDs a note', () => {
+  it('CRUDs the note', () => {
     const faker = require('faker')
     const noteDescription = faker.lorem.words(4)
 
