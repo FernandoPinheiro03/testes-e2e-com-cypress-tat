@@ -88,7 +88,7 @@ Cypress.Commands.add('fillSettingsFormAndSubmit', () => {
   cy.contains('button', 'Purchase').click()
 })
 
-Cypress.Commands.add('logout', note => {
+Cypress.Commands.add('logout', () => {
   if (Cypress.config('viewportWidth') < Cypress.env('viewportWidthBreakpoint')) {
     cy.get('.navbar-toggle.collapsed')
       .should('be.visible')

@@ -15,6 +15,7 @@ jobs:
       run: npm install
     - name: Run ESLint
       run: npm run lint
+      run: npm run lint:fix
   cypress-tests-desktop:
     needs: eslint
     runs-on: ubuntu-latest
